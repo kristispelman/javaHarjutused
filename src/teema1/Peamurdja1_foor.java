@@ -1,5 +1,7 @@
 package teema1;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
 import lib.Foor;
 
 /**
@@ -17,5 +19,34 @@ import lib.Foor;
  * NB! Kui kirjutad new Foor(); siis IDE pakub sulle Foori importimise võimalust.
  * Kliki punase teksti peale ja vajuta alt+enter.
  */
-public class Peamurdja1_foor {
+public class Peamurdja1_foor extends Application {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Foor foor = new Foor();
+        int i=0;
+        foor.vahetaPunast();
+        foor.paus(0.5);
+        while (i<10){
+            foor.paus(2);
+            foor.vahetaKollast();
+            foor.paus(0.5);
+            foor.vahetaPunast();
+            foor.vahetaKollast();
+            foor.vahetaRohelist();
+            foor.paus(2);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.paus(0.5);
+            foor.vahetaRohelist();
+            foor.vahetaKollast();
+            foor.paus(0.5);
+            foor.vahetaKollast();
+            foor.vahetaPunast();
+            i = i+1;
+
+        }
+
+
+    }
 }
