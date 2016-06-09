@@ -1,3 +1,5 @@
+Katse!
+
 # javaHarjutused
 
 Siia jõuavad Eesti Infotehnoloogia Kolledži Java algkursuse harjutusülesanded.
